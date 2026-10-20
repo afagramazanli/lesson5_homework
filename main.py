@@ -6,10 +6,10 @@ load_dotenv()
 
 base_url = os.getenv("API_BASE_URL")
 
-print(base_url)
 
-response = requests.get(f"{base_url}/users/99999")
-
+user_id = input("User ID daxil edin: ")
+response = requests.get(f"{base_url}/users/{user_id}")
+print(response.status_code)
 if response.status_code == 200:
 
     user = response.json()
