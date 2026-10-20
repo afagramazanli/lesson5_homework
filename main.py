@@ -23,3 +23,6 @@ if response.status_code == 200:
     print("City:", user["address"]["city"])
 else: 
     print("user tapilmadi. ")    
+
+
+print("Program finished")
